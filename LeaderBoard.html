@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/leaderboard.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <nav></nav>
+      <section class="customer-profile">
+        <h1>Rank <span class="red-font">#5</span></h1>
+        <img src="./assets/profile.svg" />
+        <h2>Sukriti Singh</h2>
+        <p>Senior beauty analyst</p>
+      </section>
+      <section class="leaderboard_represtation">
+        <div class="leaderboard_content">
+          <div class="img_wrapper">
+            <img src="/assets/contact.svg" />
+          </div>
+          <div>
+            <h4>17,185</h4>
+            <p>Contact numbers collected</p>
+          </div>
+        </div>
+        <div class="leaderboard_content">
+          <div class="img_wrapper">
+            <img src="/assets/contact.svg" />
+          </div>
+          <div>
+            <h4>52.25%</h4>
+            <p>Percentage of No.s collected</p>
+          </div>
+        </div>
+        <div class="leaderboard_content">
+          <div class="img_wrapper">
+            <img src="/assets/customer.svg" />
+          </div>
+          <div>
+            <h4>25,655</h4>
+            <p>Customers attended</p>
+          </div>
+        </div>
+      </section>
+      <section class="achievement">
+        <div class="top_section">
+          <div>
+            <h2>Your achievement</h2>
+            <h3>
+              <span class="percent">%</span>85 <span class="rate">15.65%</span>
+            </h3>
+            <p>Compared to Sureka Angel (#1)</p>
+          </div>
+          <div class="compare">Compare</div>
+        </div>
+        <div class="group">
+          <div class="inner-group">
+            <div class="circle blue"></div>
+            <p>Your achievement</p>
+          </div>
+          <div class="inner-group">
+            <div class="circle purple"></div>
+            <p>Scalett Johnson</p>
+          </div>
+        </div>
+      </section>
+      <!-- graph -->
+      <section>
+        <img class="chart2" src="./assets/chart2.svg" />
+      </section>
+      <section>
+        <div class="tab">
+          <button
+            class="tablinks"
+            onclick="openCity(event, 'London')"
+            id="defaultOpen"
+          >
+            October
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')">
+            This week
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+            Today
+          </button>
+        </div>
+
+        <div id="London" class="tabcontent">
+          <div class="tab_element">
+            <img src="./assets/leader1.svg" />
+            <div class="about_person">
+              <h1>Scarlett Johnson</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.85%</p>
+            </div>
+            <h4>#1</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader2.svg" />
+            <div class="about_person">
+              <h1>Samantha Roberts</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.88%</p>
+            </div>
+            <h4>#2</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader3.svg" />
+            <div class="about_person">
+              <h1>Jamie Ann</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:87.58%</p>
+            </div>
+            <h4>#3</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader4.svg" />
+            <div class="about_person">
+              <h1>Angelin mathew</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:85.85%</p>
+            </div>
+            <h4>#4</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/profile.svg" />
+            <div class="about_person">
+              <h1>Sukriti Singh</h1>
+              <span> senior beauty analyst </span>
+            </div>
+            <h4>#5</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+
+          <div class="tab_element">
+            <img src="./assets/leader3.svg" />
+            <div class="about_person">
+              <h1>Jesse jaimes</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:82.85%</p>
+            </div>
+            <h4>#6</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </section>
+    </div>
+    <script>
+      function openCity(evt, cityName) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

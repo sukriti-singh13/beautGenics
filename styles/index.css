@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #c83b53;
+  --interFont: "Inter", sans-serif;
+  --lightWeight: 400;
+  --mediumWeight: 500;
+  --primaryFontSize: 16px;
+}
+body {
+  margin: 0 !important;
+  background-color: #e5e5e5;
+  font-family: "Roboto", sans-serif;
+}
+.main-container {
+  max-width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  height: 100%;
+  position: relative;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+nav {
+  background-color: #c83b53;
+  width: 100%;
+  height: 56px;
+  max-width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section {
+  background-color: #fff;
+}
+
+.customer-profile {
+  display: grid;
+  place-content: center;
+  padding: 24px 0px;
+}
+.customer-profile img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.customer-profile h2 {
+  font-weight: var(--mediumWeight);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.customer-profile p {
+  font-weight: var(--lightWeight);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.rate {
+  font-weight: 400;
+  font-size: 10px;
+  color: #1eaa4b;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.red {
+  background: #c83b53;
+}
+.orange {
+  background: #ed9013;
+}
+.purple {
+  background: #a82cd0;
+}
+.blue {
+  background: linear-gradient(180deg, #4eb4f9 0%, #4ee7e8 100%);
+}
+.percent {
+  color: var(--primary-color);
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}

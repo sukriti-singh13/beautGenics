@@ -1,0 +1,153 @@
+.leaderboard_represtation {
+  display: flex;
+  justify-content: space-around;
+}
+.leaderboard_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.leaderboard_content h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #c83b53;
+  text-align: center;
+}
+.leaderboard_content p {
+  font-weight: 400;
+  font-size: 10px;
+  color: #5e6265;
+}
+.achievement {
+  padding: 40px 20px 0px 30px;
+}
+.achievement .top_section {
+  display: flex;
+  justify-content: space-between;
+}
+.top_section h2 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #979797;
+}
+.top_section h3 {
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+}
+.top_section p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5e6265;
+}
+.group .inner-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.group {
+  margin-top: 26px;
+  display: flex;
+  gap: 11px;
+}
+.group p {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5e6265;
+}
+.chart2 {
+  object-fit: contain;
+}
+.customer-profile h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.red-font {
+  color: var(--primary-color);
+}
+.compare {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.25px;
+  color: #c83b53;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background: #c83b53;
+  opacity: 0.08;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  background: #c83b53;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #000;
+}
+.tablinks {
+  color: #000 !important;
+}
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+} */
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: #c83b53;
+  border-bottom: 2px #c83b53;
+  border-radius: 5px 5px 0px 0px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tab_element {
+  margin-top: 33px;
+  display: flex;
+}
+.tab_element img {
+  width: 45px;
+  margin-right: 25px;
+}
+.tab_element .about_person {
+  margin-right: 140px;
+}
+.tab_element .about_person h1 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.tab_element .about_person span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #5e6265;
+}
+.tab_element .about_person p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.tab_element h4 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #c83b53;
+}
+hr {
+  height: 0px !important;
+  border: 0.001px solid rgba(200, 59, 83, 0.5);
+}

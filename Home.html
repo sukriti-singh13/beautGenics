@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      <nav>
+        <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+          >&#9776; open</span
+        >
+      </nav>
+      <section class="introduction">
+        <div class="about">
+          <p>Hello Sukriti!</p>
+          <h2>Senior beauty Analyst</h2>
+          <div class="progress_bar">
+            <div class="progress"></div>
+          </div>
+          <span>Target progresss</span>
+        </div>
+
+        <img src="./assets/profile.svg" />
+      </section>
+      <section class="services">
+        <div class="heading">
+          <h2>Services</h2>
+          <p>View all</p>
+        </div>
+        <section id="service_list">
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Sales</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Sales History</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Dashboard</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>LeaderBoard</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Attendence</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Stock</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Sales</p>
+          </div>
+          <div class="service-item">
+            <img src="./assets/service1.svg" />
+            <p>Sales</p>
+          </div>
+        </section>
+      </section>
+      <section class="custom_Safety">
+        <img src="/assets/washing_hand.svg" />
+        <div>
+          <h3>Customer safety is OUR <br />priority!</h3>
+          <button>Safety Guidelines</button>
+        </div>
+      </section>
+      <section class="blogs">
+        <div class="heading">
+          <h2>Beautician blogs</h2>
+          <button class="trending">Trending</button>
+        </div>
+        <p>
+          We’ve filtered the hottest blog topics for you to read , enjoy and
+          improve your customer experience as a beauty analyst
+        </p>
+        <div class="cards_container">
+          <div class="card">
+            <img src="/assets/blog.svg" />
+            <h4>how does customer service impact sales directly - A thread</h4>
+            <div class="lower_section">
+              <div>
+                <h5>Anisha seghal</h5>
+                <h6>Aug,01,2020. 5 mins read</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
