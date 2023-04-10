@@ -32,7 +32,7 @@
   color: #666666;
   margin: 8px 0px 46px 0px;
 }
-.signin_btns span {
+.signin_btns .lets_start {
   font-weight: var(----lightWeight);
   font-size: var(--primaryFontSize);
   color: #979797;
@@ -43,6 +43,10 @@
   font-weight: 400;
   font-size: var(----lightWeight);
   letter-spacing: -0.011em;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 .google {
   margin: 8px 0px 16px 0px;
