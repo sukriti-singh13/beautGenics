@@ -60,6 +60,9 @@
 .chart2 {
   object-fit: contain;
 }
+.chart2 img {
+  width: 100%;
+}
 .customer-profile h1 {
   text-align: center;
   margin-bottom: 10px;
@@ -115,7 +118,8 @@
   margin-right: 25px;
 }
 .tab_element .about_person {
-  margin-right: 140px;
+  width: 200px;
+  margin-right: 50px;
 }
 .tab_element .about_person h1 {
   font-weight: 400;

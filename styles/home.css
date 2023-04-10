@@ -53,7 +53,7 @@
 #service_list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px 48px;
+  justify-content: space-between;
   margin-top: 3px;
 }
 
