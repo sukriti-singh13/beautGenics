@@ -20,7 +20,23 @@
           <h2>Senior beauty analyst</h2>
         </div>
         <hr />
-        <div class="health">Health & Glow, 18th Main Road, HSR, Sector II</div>
+        <div class="health">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="#c83b53"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+            </svg>Health & Glow, 18th Main Road, HSR, Sector II
+        </div>
         <hr />
         <h6>Quick Access</h6>
         <section id="navigate_to">
@@ -190,22 +206,59 @@
         </div>
       </div>
 
+      <!-- navbar -->
       <nav>
-        <span style="cursor: pointer" onclick="openNav()"
-          ><svg
+        <div class="start-content-nav">
+          <span style="cursor: pointer" onclick="openNav()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="30"
+              fill="#fff"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </span>
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="30"
-            fill="#fff"
-            class="bi bi-list"
+            width="16"
+            height="16"
+            fill="white"
+            class="bi bi-geo-alt"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
             />
           </svg>
-        </span>
+          <input
+            style="margin-left: 5px"
+            class="input_home"
+            placeholder="Health & Glow, 18th Main Road, HSR, Sector  II "
+          />
+        </div>
+        <div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#fff"
+            class="bi bi-bell-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+            />
+          </svg>
+        </div>
       </nav>
       <section class="introduction">
         <div class="about">
@@ -230,32 +283,32 @@
             <p>Sales</p>
           </div>
           <div class="service-item">
-            <img src="./assets/service1.svg" />
+            <img src="./assets/service2.svg" />
             <p>Sales History</p>
           </div>
-          <div class="service-item">
-            <img src="./assets/service1.svg" />
+          <div class="service-item " onclick="window.location.href='DashBoard.html';">
+            <img src="./assets/service3.svg" />
             <p>Dashboard</p>
           </div>
-          <div class="service-item">
+          <div class="service-item" onclick="window.location.href='LeaderBoard.html';">
             <img src="./assets/service1.svg" />
             <p>LeaderBoard</p>
           </div>
           <div class="service-item">
-            <img src="./assets/service1.svg" />
+            <img src="./assets/service6.svg" />
             <p>Attendence</p>
           </div>
           <div class="service-item">
-            <img src="./assets/service1.svg" />
+            <img src="./assets/service7.svg" />
             <p>Stock</p>
           </div>
           <div class="service-item">
-            <img src="./assets/service1.svg" />
-            <p>Sales</p>
+            <img src="./assets/service8.svg" />
+            <p>Offers & Coupons</p>
           </div>
           <div class="service-item">
-            <img src="./assets/service1.svg" />
-            <p>Sales</p>
+            <img src="./assets/service9.svg" />
+            <p>Follow our  guidelines</p>
           </div>
         </section>
       </section>
@@ -269,13 +322,47 @@
       <section class="blogs">
         <div class="heading">
           <h2>Beautician blogs</h2>
-          <button class="trending">Trending</button>
+          <button class="trending">
+            Trending
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="7"
+              height="7"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+          </button>
         </div>
         <p>
           We’ve filtered the hottest blog topics for you to read , enjoy and
           improve your customer experience as a beauty analyst
         </p>
         <div class="cards_container">
+          <div class="card">
+            <img src="/assets/blog.svg" />
+            <h4>how does customer service impact sales directly - A thread</h4>
+            <div class="lower_section">
+              <div>
+                <h5>Anisha seghal</h5>
+                <h6>Aug,01,2020. 5 mins read</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/blog.svg" />
+            <h4>how does customer service impact sales directly - A thread</h4>
+            <div class="lower_section">
+              <div>
+                <h5>Anisha seghal</h5>
+                <h6>Aug,01,2020. 5 mins read</h6>
+              </div>
+            </div>
+          </div>
           <div class="card">
             <img src="/assets/blog.svg" />
             <h4>how does customer service impact sales directly - A thread</h4>

@@ -20,7 +20,21 @@
           <h2>Senior beauty analyst</h2>
         </div>
         <hr />
-        <div class="health">Health & Glow, 18th Main Road, HSR, Sector II</div>
+        <div class="health"> <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="#c83b53"
+          class="bi bi-geo-alt"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+          />
+          <path
+            d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+          />
+          </svg>Health & Glow, 18th Main Road, HSR, Sector II</div>
         <hr />
         <h6>Quick Access</h6>
         <section id="navigate_to">
@@ -189,23 +203,40 @@
           English (US) . Privacy . Terms & Cond
         </div>
       </div>
-
+      <!-- navbar -->
       <nav>
-        <span style="cursor: pointer" onclick="openNav()"
-          ><svg
+        <div class="start-content-nav">
+          <span style="cursor: pointer" onclick="openNav()"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="30"
+              fill="#fff"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </span>
+          <p>Leaderboards</p>
+        </div>
+        <div>
+          <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="30"
+            width="24"
+            height="24"
             fill="#fff"
-            class="bi bi-list"
+            class="bi bi-bell-fill"
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
             />
           </svg>
-        </span>
+        </div>
       </nav>
       <section class="customer-profile">
         <h1>Rank <span class="red-font">#5</span></h1>
@@ -247,11 +278,33 @@
           <div>
             <h2>Your achievement</h2>
             <h3>
-              <span class="percent">%</span>85 <span class="rate">15.65%</span>
+              <span style="margin-right: 5px" class="percent">%</span>85
+              <span class="rate">15.65%</span>
             </h3>
             <p>Compared to Sureka Angel (#1)</p>
           </div>
-          <div class="compare">Compare</div>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              gap: 3px;
+              cursor: pointer;
+            "
+            class="compare"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#c83b53"
+              class="bi bi-plus-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+/></svg>Compare
+          </div>
         </div>
         <div class="group">
           <div class="inner-group">
@@ -272,20 +325,20 @@
         <div class="tab">
           <button
             class="tablinks"
-            onclick="openCity(event, 'London')"
+            onclick="openCity(event, 'October')"
             id="defaultOpen"
           >
             October
           </button>
-          <button class="tablinks" onclick="openCity(event, 'Paris')">
+          <button class="tablinks" onclick="openCity(event, 'Week')">
             This week
           </button>
-          <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+          <button class="tablinks" onclick="openCity(event, 'Today')">
             Today
           </button>
         </div>
 
-        <div id="London" class="tabcontent">
+        <div id="October" class="tabcontent">
           <div class="tab_element">
             <img src="./assets/leader1.svg" />
             <div class="about_person">
@@ -345,17 +398,62 @@
             </div>
             <h4>#6</h4>
           </div>
+          
+        </div>
+
+        <div id="Week" class="tabcontent">
+          <div class="tab_element">
+            <img src="./assets/leader1.svg" />
+            <div class="about_person">
+              <h1>Scarlett Johnson</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.85%</p>
+            </div>
+            <h4>#1</h4>
+          </div>
           <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader2.svg" />
+            <div class="about_person">
+              <h1>Samantha Roberts</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.88%</p>
+            </div>
+            <h4>#2</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader3.svg" />
+            <div class="about_person">
+              <h1>Jamie Ann</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:87.58%</p>
+            </div>
+            <h4>#3</h4>
+          </div>
         </div>
 
-        <div id="Paris" class="tabcontent">
-          <h3>Paris</h3>
-          <p>Paris is the capital of France.</p>
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-          <h3>Tokyo</h3>
-          <p>Tokyo is the capital of Japan.</p>
+        <div id="Today" class="tabcontent">
+          <div class="tab_element">
+            <img src="./assets/leader1.svg" />
+            <div class="about_person">
+              <h1>Scarlett Johnson</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.85%</p>
+            </div>
+            <h4>#1</h4>
+          </div>
+          <hr style="margin-top: 18px" />
+          <div class="tab_element">
+            <img src="./assets/leader2.svg" />
+            <div class="about_person">
+              <h1>Samantha Roberts</h1>
+              <span> senior beauty analyst </span>
+              <p class="red-text">Achievement:92.88%</p>
+            </div>
+            <h4>#2</h4>
+          </div>
+         
         </div>
       </section>
     </div>
